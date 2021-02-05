@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+n=$(cat number)
+n=$(( n + 1 ))
+echo "$n" > number
+
+git add -A
+git commit -m "$n" --no-gpg-sign
+git push
