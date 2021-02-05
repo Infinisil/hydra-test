@@ -4,7 +4,7 @@
   outputs = { self, nixpkgs }: {
 
     hydraJobs.test = nixpkgs.legacyPackages.x86_64-linux.runCommandNoCC "test" {} ''
-      echo 0 > $out
+      echo 1 > $out
     '';
 
   };
